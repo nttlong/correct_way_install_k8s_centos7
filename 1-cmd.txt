@@ -1,0 +1,12 @@
+sudo yum install -y git
+sudo yum install wget -y
+sudo systemctl stop firewalld
+sudo yum install net-tools -y
+
+sudo yum install -y nano
+sudo apt-get install curl
+sudo yum check-update
+curl -fsSL https://get.docker.com/ | sh
+sudo systemctl start docker
+sudo systemctl status docker
+sudo systemctl enable docker
