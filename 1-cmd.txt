@@ -1,3 +1,5 @@
+sudo swapoff -a
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 sudo yum install -y git
 sudo yum install wget -y
 sudo systemctl stop firewalld
